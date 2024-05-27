@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Footer konten dan modal</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+
+  <body>
+    <!--header-->
+    <nav class="navbar navbar-expand bg-secondary navbar-dark">
+      <div class="container-lg">
+        <a class="navbar-brand" href="#">
+          <i class="bi bi-fingerprint"></i> Jejak Pendaki
+        </a>
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarSupportedContent"
+        >
+          <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Menu
+              </a>
+              <ul class="dropdown-menu dropdown-menu-end mt-2 border-success">
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="#"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                    ><i class="bi bi-person-circle"></i> Profil</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-key-fill"></i> Ubah Password</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-gear"></i> Pengaturan</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-globe2"></i> Pilihan Bahasa</a
+                  >
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    ><i class="bi bi-box-arrow-left"></i> Logout</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--end header-->
+
+    <div class="container-lg">
+      <div class="row">
+        <!--sidebar navigasi-->
+        <div class="col-lg-3">
+          <nav
+            class="navbar navbar-expand-lg bg-body-tertiary rounded mt-2 border"
+          >
+            <div class="container-lg">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div
+                class="offcanvas offcanvas-start"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+                    Explorer
+                  </h5>
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                  ></button>
+                </div>
+
+                <div class="offcanvas-body">
+                  <ul class="nav nav-pills flex-column flex-grow-1">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Beranda</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#">Akun</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#">Tips</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#">Panduan</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link link-dark" href="#">Berbagi</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <!--end sidebar navigasi-->
+
+        <!--content-->
+        <div class="col-lg-9">
+          <div class="card mt-2">
+            <div class="card-header">Artikel Pendakian</div>
+            <div class="card-body">
+              <h5 class="card-title">Pesona Gunung Bromo</h5>
+              <p class="card-text">
+                Gunung Bromo adalah salah satu gunung berapi paling terkenal di
+                Indonesia dan menjadi destinasi wisata utama di Jawa Timur.
+                Dengan ketinggian 2.329 meter di atas permukaan laut, Gunung
+                Bromo menawarkan pemandangan yang spektakuler, terutama saat
+                matahari terbit.
+              </p>
+
+              <p class="card-text">
+                Pendakian ke Gunung Bromo relatif mudah dibandingkan dengan
+                gunung-gunung lainnya, membuatnya cocok untuk pendaki pemula.
+                Jalur pendakian yang umum dimulai dari Desa Cemoro Lawang, yang
+                memungkinkan para pendaki menikmati pemandangan Laut Pasir yang
+                luas dan Kawah Bromo yang aktif.
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end content-->
+      </div>
+
+      <!-- Footer-->
+      <div class="text-center bg-light fixed-bottom py-2">
+        Copyright 2024 Nadila Arsyifa //bootstrap
+      </div>
+      <!-- end Footer-->
+    </div>
+
+    <!-- Modal-->
+    <div
+      class="modal fade modal-xl"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header bg-secondary text-white">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Profil Pendaki
+            </h1>
+            <button
+              type="button"
+              class="btn-close btn-close-white"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-4">
+                  <img
+                    src="data:image/jpeg;base64,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"
+                    class="img -fluid rounded-circle mb-3"
+                    alt="Profil Pendaki"
+                  />
+                </div>
+                <div class="col-md-8">
+                  <h3>Nadila Arsyifa</h3>
+                  <p>
+                    Pendaki pemula yang baru memulai perjalanan ke berbagai
+                    puncak di Indonesia
+                  </p>
+                  <ul class="list-unstyled">
+                    <li>
+                      <i class="bi bi-geo-alt-fill"></i> Lokasi: Aceh, Indonesia
+                    </li>
+                    <li>
+                      <i class="bi bi-flag-fill"></i> Pendakian Terakhir: Gunung
+                      Bromo
+                    </li>
+                    <li>
+                      <i class="bi bi-trophy-fill"></i> Prestasi: belum ada
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Tutup
+            </button>
+            <button type="button" class="btn btn-primary">
+              Simpan Perubahan
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal-->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
