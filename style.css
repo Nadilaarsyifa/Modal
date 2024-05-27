@@ -15,18 +15,15 @@ div.offcanvas-body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-:root {
-    --custom-bacground-color: rgb(124, 142, 155) !important;
-}
 
 .nav-link.active {
-    background-color: var(--custom-bacground-color) !important;
+    background-color: rgb(124, 142, 155) !important;
 }
 
 .btn-primary {
-    background-color: var(--custom-bacground-color) !important;
+    background-color: rgb(124, 142, 155) !important;
 }
 
 .dropdown-item:active {
-    background-color: var(--custom-bacground-color) !important;
+    background-color: rgb(124, 142, 155) !important;
 }
